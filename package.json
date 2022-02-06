@@ -5,11 +5,12 @@
   "license": "MIT",
   "scripts": {
     "start": "budo --live --verbose --port 3000 --open",
-    "deploy": "ghpages",
+    "deploy": "npm run build && gh-pages -d dist",
     "ghpages": "ghpages"
   },
   "devDependencies": {
     "budo": "^7.0.0",
+    "gh-pages": "^3.2.3",
     "ghpages": "0.0.3"
   },
   "keywords": [
